@@ -1,0 +1,9 @@
+services:
+  web:
+    image: mathmateai/math-mate
+    container_name: "math-mate"
+    restart: always
+    ports:
+      - '127.0.0.1:5000:5000'
+    environment:
+      OPEN_API_KEY: ""
